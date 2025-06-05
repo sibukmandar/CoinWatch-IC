@@ -36,7 +36,7 @@ Make sure you have:
 
 ### Clone the repository
 ```
-git clone https://github.com/your-username/coinwatch-ic.git
+git clone https://github.com/sibukmandar/CoinWatch-IC.git
 cd coinwatch-ic
 ```
 
