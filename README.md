@@ -34,28 +34,28 @@ Make sure you have:
 ### 2. Installation
 
 
-# Clone the repository
+### Clone the repository
 ```
 git clone https://github.com/your-username/coinwatch-ic.git
 cd coinwatch-ic
 ```
 
-# Install frontend dependencies
+### Install frontend dependencies
 ```
 npm install
 ```
 
-# Back to root
+### Back to root
 ```
 cd ..
 ```
 
-# Start DFX
+### Start DFX
 ```
 dfx start --background
 ```
 
-# Deploy the canisters locally
+### Deploy the canisters locally
 ```
 dfx deploy
 ```
