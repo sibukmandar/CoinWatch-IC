@@ -1,0 +1,162 @@
+/* Reset dan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0f1a; /* dark navy */
+  color: #c0c8ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* Container utama */
+.app-container {
+  background: linear-gradient(135deg, #0a0f1a 0%, #12172f 100%);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow:
+    0 0 10px #3a8cff,
+    0 0 20px #5fcfff,
+    0 0 30px #9ff5ff;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #4be1ff;
+  text-shadow: 0 0 10px #4be1ff;
+}
+
+/* Tabel token */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.75rem;
+}
+
+thead th {
+  color: #7ec8ff;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #2e4369;
+}
+
+tbody tr {
+  background: #15263b;
+  box-shadow:
+    0 0 5px #4be1ff66,
+    inset 0 0 10px #2c4a7a66;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+  background: #1a3a61;
+  box-shadow:
+    0 0 10px #4be1ffcc,
+    inset 0 0 15px #2c4a7acc;
+}
+
+tbody td {
+  padding: 1rem;
+  color: #a0c8ff;
+  font-weight: 500;
+}
+
+/* Tombol */
+button {
+  background: linear-gradient(45deg, #00ffff, #0077ff);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  color: #e0f7ff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00ffff;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  box-shadow:
+    0 0 15px #00ffff,
+    0 0 30px #00ffff,
+    0 0 40px #0077ff;
+  transform: translateY(-2px);
+}
+
+/* Form input */
+input[type="text"], input[type="number"] {
+  background: #0e1522;
+  border: 1.5px solid #285a9a;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: #a0c8ff;
+  font-weight: 600;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+/* Layout form */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7ec8ff;
+  font-weight: 600;
+}
+
+/* Responsive Grid */
+@media (min-width: 600px) {
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-row > div {
+    flex: 1;
+  }
+
+  .action-buttons {
+   display: flex;
+    gap: 8px;
+    }
+
+  .action-buttons button {
+    padding: 6px 12px;
+  }
+
+  .form-actions button + button {
+  margin-left: 10px;
+  }
+
+  table th,
+  table td {
+  text-align: center;
+  vertical-align: middle;
+  }
+
+
+}
